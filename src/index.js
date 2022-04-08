@@ -1,12 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import "./index.css";
+import { createRoot } from 'react-dom/client';
 
-
-ReactDOM.render(
-  <React.StrictMode>
+/*ReactDOM.render(
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
-);
+);*/
 
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App/>);

@@ -40,7 +40,7 @@ function AdminLogin(props) {
          required />
         
         <input type="submit"
-         value="ADMIN LOGIN"
+         value="Login"
          className="btn btn-lg btn-outline-dark rounded-pill" />
       </form>
     </div>

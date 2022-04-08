@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {Link, useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function UserLoginPage(props) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [isError, setIsError] = useState("");
-  const history = useHistory()
+  
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -19,7 +19,7 @@ function UserLoginPage(props) {
     axios.post(`${process.env.REACT_APP_API_ENDPOINT}/api/login`, userinfo)
     .then((res) => {
       const id = res.data.user._id
-      history.push(`/user/${id}`)
+     
     })
     .catch((error)=>{
       setIsError("Invalid email / password")
@@ -62,7 +62,7 @@ function UserLoginPage(props) {
           <div className="form-group col-md-12 foot-text">
             <p>
               New User?
-              <Link to="/signUp">
+              <Link to="/">
                 Sign Up
               </Link>
             </p>
