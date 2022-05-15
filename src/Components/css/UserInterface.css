@@ -1,0 +1,14 @@
+.nav-bar a:hover
+{
+    transition: 1s;
+}
+
+.foods
+{
+    transition: 1s;
+}
+
+.lower-upper-part1>.ad
+{
+    transition: 1s;
+}

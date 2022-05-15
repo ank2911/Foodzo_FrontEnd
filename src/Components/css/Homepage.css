@@ -1,0 +1,19 @@
+.sweets
+{
+    transition: 1s;
+}
+
+.nav-bar a:hover
+{
+    transition: 1s;
+}
+
+p:hover
+{
+    transition:1s;
+}
+
+.icons-wrapper > .a 
+{
+    transition: 1s;
+}
