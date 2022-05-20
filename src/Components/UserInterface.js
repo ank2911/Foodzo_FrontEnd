@@ -1,6 +1,7 @@
 import React from 'react'
 import pic from './img/food2.avif'
 import './css/UserInterface.css'
+import './css/mediaqueries2.css'
 import chow from './img/noodles.avif'
 import biryani from './img/biryani.avif'
 import rolls from './img/rolls.avif'
@@ -17,13 +18,13 @@ function UserInterface() {
             <div className="upper-part1 h-[auto] bg-no-repeat bg-cover" style={{backgroundImage:`url(${pic})`}}>
                 <div className="heading-nav-container flex">
                     <div className="heading ml-[30px] mt-[20px]">
-                        <h1 className="heading text-[40px] text-white">Foodzo</h1>
+                        <h1 className="heading1 text-[40px] text-white">Foodzo</h1>
                     </div>
-                    <div className="nav-bar ml-[900px] mt-[20px]">
+                    <div id="links" className="nav-bar ml-[900px] mt-[20px]">
                         <Link to="#" className="home text-white text-[30px] hover:tracking-widest">Home</Link>
                         <Link to="#" className="About text-white text-[30px] ml-[20px] hover:tracking-widest">About</Link>
-                        <Link to="#" className="Login text-white text-[30px] ml-[20px] hover:tracking-widest">Login</Link>
-                        <Link to="#" className="Signup text-white text-[30px] ml-[20px] hover:tracking-widest">Signup</Link>
+                        <Link to="#" className="Login text-white text-[30px] ml-[20px] hover:tracking-widest">My Account</Link>
+                        <Link to="#" className="Signup text-white text-[30px] ml-[20px] hover:tracking-widest">Logout</Link>
                     </div>
                 </div>
                 <div className="text-wrapper mt-[150px] ml-[30px]">
@@ -49,13 +50,13 @@ function UserInterface() {
                 <Link to="#" className="ad mt-[20px] mb-[20px] ml-[100px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/rmu9xmyxpyc3iwgvh6u1")`}}>
                     
                 </Link>
-                <Link to="#" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/yparhmxrby5lv0ubsel4")`}}>
+                <Link to="#" id="ads" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/yparhmxrby5lv0ubsel4")`}}>
                     
                 </Link>
-                <Link to="#" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/dpqcjrxwruipnt1wyqnh")`}}>
+                <Link to="#" id="ads" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/dpqcjrxwruipnt1wyqnh")`}}>
                     
                 </Link>
-                <Link to="#" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lyn9at38gjithnogzfui")`}}>
+                <Link to="#" id="ads" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lyn9at38gjithnogzfui")`}}>
                     
                 </Link>
             </div>
@@ -77,7 +78,7 @@ function UserInterface() {
                 <hr/>
                 <div className="text-[50px]">Explore your aroma</div>
                <div className="items ml-[130px] mt-[50px] flex">
-                    <Link to="#" className="foods rounded-xl text-black h-[auto] w-[300px] border-solid border-[0.3px] hover:scale-110">
+                    <Link to="#" id="first-food" className="foods rounded-xl text-black h-[auto] w-[300px] border-solid border-[0.3px] hover:scale-110">
                         <div className="rounded-t-lg bg-cover h-[150px] w-[300px]" style={{backgroundImage:`url(${chow})`}}></div>
                         <div className="img-text mb-[10px]">
                             <h1 className="text-left text-[25px]">Sudhamrit</h1>
@@ -183,7 +184,7 @@ function UserInterface() {
                     </Link>     
                 </div>
                 <div className="items ml-[130px] mt-[50px] flex">
-                    <Link to="#" className="foods rounded-xl text-black h-[auto] w-[300px] border-solid border-[0.3px] hover:scale-110">
+                    <Link to="#" id="first-food" className="foods rounded-xl text-black h-[auto] w-[300px] border-solid border-[0.3px] hover:scale-110">
                         <div className="rounded-t-lg bg-cover h-[150px] w-[300px]" style={{backgroundImage:`url(${mutton})`}}></div>
                         <div className="img-text mb-[10px]">
                             <h1 className="text-left text-[25px]">Kolkata Biryani House</h1>

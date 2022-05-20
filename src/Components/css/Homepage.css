@@ -3,7 +3,7 @@
     transition: 1s;
 }
 
-.nav-bar a:hover
+.nav-bar1 a:hover
 {
     transition: 1s;
 }
@@ -14,6 +14,11 @@ p:hover
 }
 
 .icons-wrapper > .a 
+{
+    transition: 1s;
+}
+
+.nav-bar a:hover
 {
     transition: 1s;
 }

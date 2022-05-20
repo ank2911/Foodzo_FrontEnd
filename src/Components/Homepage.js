@@ -5,6 +5,7 @@ import pic2 from "./img/burgers.avif"
 import pic3 from "./img/drinks.avif"
 import pic4 from "./img/pizza2.avif"
 import './css/Homepage.css'
+import './css/mediaqueries1.css'
 import UserLoginPage from './UserLoginPage'
 import {Link} from 'react-router-dom'
 
@@ -21,8 +22,8 @@ function Homepage()
                    <div className="heading text-white ml-[30px] mt-[20px]">
                        <h1 className="text-[40px]">Foodzo</h1>
                    </div>
-                   <div className="nav-bar ml-[1000px] mt-[20px]">
-                       <Link to="#" className="home text-[30px] text-white no-underline hover:tracking-widest">Home</Link>
+                   <div id="links" className="nav-bar1 relative ml-[1000px] mt-[20px]">
+                       <Link to="#" id="home" className="home text-[30px] text-white no-underline hover:tracking-widest">Home</Link>
                     <Link to="#" className="about text-[30px] ml-[20px] text-white no-underline hover:tracking-widest">About</Link>
                     <Link to="#" className="login text-[30px] ml-[20px] text-white no-underline hover:tracking-widest">Login</Link>
                     <Link to="#" className="signup text-[30px] ml-[20px] text-white no-underline hover:tracking-widest">Signup</Link>
@@ -36,14 +37,14 @@ function Homepage()
                        Explore your foodlaand
                    </div>
                </div>
-               <div className="input-button-wrapper ml-[120px] mt-[20px] flex">
+               <div className="input-button-wrapper ml-[77px] mt-[20px] flex">
                    <div className="input-text">
-                       <input type="text" placeholder="    search food,places,restaurants" className="rounded-l-lg border-[1px] h-[60px] bg-transparent border-solid text-white border-white w-[350px]"></input>
+                       <input type="text" placeholder="    search food,places,restaurants" className="text1 rounded-l-lg border-[1px] h-[60px] bg-transparent border-solid text-white border-white w-[350px]"></input>
                    </div>
     
                   
                     <div className="button">
-                        <button type="button" className="w-[50px] h-[60px] border-[1px] bg-pink-500 active:bg-pink-600 border-solid border-white ml-[-8px] mt-[0px] mb-[10px] rounded-r-lg">
+                        <button type="button" id="button3" className="w-[50px] h-[60px] border-[1px] bg-pink-500 active:bg-pink-600 border-solid border-white ml-[-8px] mt-[0px] mb-[10px] rounded-r-lg">
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
@@ -56,8 +57,8 @@ function Homepage()
                <div className="Recipies-small-text text-[25px] ml-[70px]">
                    Browse your recipies
                </div>
-               <div className="categories ml-[150px] mt-[50px] flex">
-                   <Link to="#" className="sweets rounded-xl h-[300px] w-[300px] bg-cover hover:scale-110 no-underline" style={{backgroundImage:`url(${pic1})`}}>
+               <div className="categories ml-[127px] mt-[50px] flex">
+                   <Link to="#" id="misti" className="sweets rounded-xl h-[300px] w-[300px] bg-cover hover:scale-110 no-underline" style={{backgroundImage:`url(${pic1})`}}>
                         <p className="text-white mt-[250px] text-center text-[30px] hover:tracking-widest">Sweets</p>
                     </Link>
                 
@@ -81,7 +82,7 @@ function Homepage()
                     <p className="text-white">Fusce id velit placerat,efficitur libero placerat, sodales ante. Curabitur sed erosat orci congue vestibulum.</p>
                 </div>
                 <div className="button1 mt-[200px] ml-[0px] mr-[950px]">
-                    <button type="button" className="bg-green-500 w-[150px] h-[50px] rounded-full text-white text-[30px] active:bg-green-600">Subscribe</button>
+                    <button type="button" className="button4 bg-green-500 w-[150px] h-[50px] rounded-full text-white text-[30px] active:bg-green-600">Subscribe</button>
                 </div>
            </div>
            <div className="lower-part bg-[#528f2d] h-auto">

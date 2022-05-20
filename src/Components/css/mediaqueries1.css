@@ -1,0 +1,77 @@
+@media (max-width:650px)
+{
+    .middle-part > .categories
+    {
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .sweets
+    {
+        margin-bottom: 20px;
+    }
+
+    #misti
+    {
+        margin-left: 20px;
+    }
+
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left:10px;
+    }
+
+    .heading-nav-container #links
+    {
+        /* flex-direction: column; */
+        margin-left: -10px;
+        margin-top: 60px;
+    }
+
+    .input-button-wrapper > .input-text
+    {
+        margin-left:-25px;
+    }
+
+    .text1
+    {
+        width:30px;
+    }
+
+    #home
+    {
+        margin-left: 21px;
+    }
+
+    .text1
+    {
+        margin-right:150px;
+    }
+
+    #button3
+    {
+        margin-left:-249px;
+    }
+
+    .button4
+    {
+        margin-left: 170px;
+    }
+
+    .heading-nav-container>.heading 
+    {
+        margin-left: 5px;
+    }
+
+    .middle-part > .Recipies
+    {
+        margin-left: 10px;
+    }
+
+    .middle-part > .Recipies-small-text
+    {
+        margin-left: 10px;
+    }
+
+}
