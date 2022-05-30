@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FaUser,FaLock } from "react-icons/fa";
+import { MdEmail,MdCall } from "react-icons/md";
 function SignUpForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -47,69 +49,82 @@ function SignUpForm(props) {
   };
 
   return (
-    <div className="bg-white h-screen">
-      <div className="container bg-theme-green w-1/2">
-        <h3 className="text-2xl text-black">Sign Up</h3>
+    <div className="font-Myfont">
+      <div className="myConatiner">
+        <h3 className="text-center text-black text-3xl m-6">Sign Up</h3>
         <form onSubmit={handleSubmit}>
+        <div className="relative">
+        <FaUser className="absolute top-1"/>
           <input
-            className="form-control form-control-sm text-xl text-black"
+            className="focus: outline-none placeholder:text-black pl-5"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Username"
 
           />
-
+          </div>
+          <div className="relative">
+          <MdEmail size={18} className="absolute top-1"/>
           <input
-            className="form-control form-control-sm"
+            className="focus:outline-none placeholder:text-black pl-5"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
 
           />
+          </div>
+          <div className="relative">
+          < MdCall size={20} className="absolute top-1"/>
           <input
-            className="form-control form-control-sm"
+            className="focus:outline-none placeholder:text-black pl-5"
             type="number"
             value={num}
             onChange={(e) => setNum(e.target.value)}
             placeholder="Mobile Number"
 
           />
+          </div>
+          <div className="relative">
+          <FaLock className="absolute top-1"/>
           <input
-            className="form-control form-control-sm"
+            className="focus:outline-none placeholder:text-black pl-5"
             type="Password"
             value={pass}
             onChange={(e) => setPass(e.target.value)}
             placeholder="Password"
 
           />
-
+          </div>
+          <div className="relative">
+          <FaLock className="absolute top-1"/>
           <input
-            className="form-control form-control-sm"
+            className="focus:outline-none placeholder:text-black pl-5"
             type="Password"
             value={confpass}
             onChange={checkpassword}
             placeholder="Confirm Password"
 
           />
-          <div className="error-text text-danger">{isError}</div>
-          <button
+          </div>
+          <div className="text-red-800">{isError}</div>
+          <div className="flex justify-center relative">          
+            <button
             type="submit"
-            className="btn btn-lg btn-outline-dark rounded-pill"
+            className="btn"
           >
             Sign Up
           </button>
-          <div className="form-row">
-            <div className="form-group col-md-12 foot-text">
+          </div>
+
               <p>
                 Already a User ?
-                <Link to="/login">
+                <Link to="/signin">
                   Login
                 </Link>
               </p>
-            </div>
-          </div>
+           
         </form>
       </div>
     </div>

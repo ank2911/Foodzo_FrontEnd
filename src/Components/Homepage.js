@@ -20,7 +20,7 @@ function Homepage() {
                         <h1 className="heading text-[40px] text-white">Foodzo</h1>
                     </div>
                     <div className="nav-bar ml-[900px] mt-[20px]e">
-                        <Link to="/about" className="About text-white text-[30px] ml-[20px] hover:tracking-widest">About us</Link>
+                        <Link to="/about" className="About text-white text-[30px] ml-[20px] hover:tracking-widest ">About us</Link>
                         <Link to="/signup" className="Signup text-white text-[30px] ml-[20px] hover:tracking-widest">SignUp</Link>
                         <Link to="/signin" className="Login text-white text-[30px] ml-[20px] hover:tracking-widest">SignIn</Link>
                     </div>

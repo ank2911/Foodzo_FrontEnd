@@ -5,11 +5,12 @@ import UserSignUp from './Components/UserSignUp';
 import UserLoginPage from './Components/UserLoginPage';
 import AdminLogin from './Components/AdminLogin';
 import Homepage from './Components/Homepage';
+import HomePage from './Pages/HomePage';
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} exact/>
+        <Route path="/" element={<HomePage/>} exact/>
         <Route path="/signup" element={<UserSignUp />} />
         <Route path="/signin" element={<UserLoginPage />} />
         <Route path="/admin_page" element={<AdminLogin />} />

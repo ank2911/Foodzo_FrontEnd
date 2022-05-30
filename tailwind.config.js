@@ -3,13 +3,13 @@ module.exports = {
      "./src/**/*.{js,jsx,ts,tsx}",
 ],
   theme: {
-    colors: {
-      'theme-green': '#528f2d',
-    },
-    container:{
-     center: true,
-    },
-  },
-  plugins: [],
+     extend:{
+       fontFamily:{
+        Myfont:["Barlow Condensed", "sans-serif"],
+        Myfont2:["Cookie","Ania Kruk"],
+       }
+     }  
+  }
+
 
 }

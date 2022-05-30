@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function UserLoginPage(props) {
   const [email, setEmail] = useState("");
@@ -30,38 +32,43 @@ function UserLoginPage(props) {
   };
 
   return (
-    <div className="">
-      <div className="container  bg-theme-green w-1/2">
-        <h3 className="user-login">User Log In</h3>
+    <div className="font-Myfont">
+      <div className="myConatiner">
+        <h3 className="text-center text-black text-3xl m-6">User Log In</h3>
         <form onSubmit={handleSubmit}>
+        <div className="relative">
+          <MdEmail size={18} className="absolute top-1"/>
           <input
             type="email"
-            className="form-control form-control-sm"
+            className="focus: outline-none placeholder:text-black pl-5"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Email"
             required
           />
-
+        </div>
+        <div className="relative">
+          <FaLock className="absolute top-1"/>
           <input
             type="password"
-            className="form-control form-control-sm"
+            className="focus: outline-none placeholder:text-black pl-5"
             value={pass}
             onChange={(e) => setPass(e.target.value)}
             placeholder="Enter Password"
             required
           />
+          </div>
           <div className="error-text text-danger">{isError}</div>
-          <input
-            type="submit"
-            value="Log In"
-            className="btn btn-lg btn-outline-dark rounded-pill"
-          />
+          <div className="flex justify-center relative">
+          <button type="submit" className="btn">
+            Log In
+          </button>
+          </div>
           <div className="form-row">
             <div className="form-group col-md-12 foot-text">
-              <p>
+              <p className="my-4">
                 New User?
-                <Link to="/">
+                <Link to="/signup" className="">
                   Sign Up
                 </Link>
               </p>
