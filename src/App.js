@@ -6,15 +6,17 @@ import UserSignUp from './Components/UserSignUp';
 import UserLoginPage from './Components/UserLoginPage';
 import AdminLogin from './Components/AdminLogin';
 import Homepage from './Components/Homepage';
+import About from './Components/About'
 function App() {
   return (
     <Router>
       <Routes>    
-         <Route path="/"  element={<UserSignUp/>}  />
-         <Route path="/adminlogin"  element={<AdminLogin/>} />
-         <Route path="/login"  element={<UserLoginPage/>} /> 
-         <Route path="/" element={<Homepage/>} />
-         <Route path="/" element={<UserInterface/>} />
+         {/* <Route path="/"  element={<UserSignUp/>}  /> */}
+         {/* <Route path="/adminlogin"  element={<AdminLogin/>} /> */}
+         {/* <Route path="/login"  element={<UserLoginPage/>} />  */}
+         {/* <Route path="/" element={<Homepage/>} /> */}
+         {/* <Route path="/" element={<UserInterface/>} /> */}
+         <Route path="/" element={<About/>} />
       </Routes>
 
     </Router>

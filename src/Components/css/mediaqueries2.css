@@ -1,5 +1,6 @@
 @media (max-width:650px)
 {
+    
     .heading-nav-container
     {
         flex-direction: column;
@@ -52,4 +53,110 @@
         margin-left: 20px;
     }
 
+}
+
+@media (max-width:450px)
+{
+    .upper-part1 > .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .text-wrapper > .big-sized
+    {
+        margin-left: -25px;
+    }
+
+    .text-wrapper > .small-sized
+    {
+        margin-left: -40px;
+    }
+
+    .upper-part1 > .heading-nav-container > #links
+    {
+        margin-left: -10px;
+    }
+
+    .upper-part1 > .heading-nav-container > .heading
+    {
+        margin-left: 20px;
+    }
+
+    .upper-part1 > .heading-nav-container > .nav-bar > .home
+    {
+        font-size:20px;
+    }
+    .upper-part1 > .heading-nav-container > .nav-bar > .About
+    {
+        font-size:20px;
+        margin-left: 7px;
+    }
+    .upper-part1 > .heading-nav-container > .nav-bar > .Login
+    {
+        font-size:20px;
+        margin-left: 7px;
+    }
+    .nav-bar > .Signup
+    {
+        font-size:20px;
+        margin-left: 7px;
+    }
+
+    #links
+    {
+        margin-left: 20px;
+    }
+
+    .heading1
+    {
+        margin-left:-30px;
+    }
+
+    .lower-upper-part1
+    {
+        flex-direction: column;
+    }
+
+    #ads
+    {
+        margin-left: 50px;
+    }
+
+    .middle-part1>.items
+    {
+        flex-direction: column;
+        margin-left: 37px;
+    }
+
+    .middle-part1>.food-nav-bar
+    {
+        margin-left:5px;
+        margin-right:10px;
+    }
+
+    .foods
+    {
+        margin-bottom: 20px;        
+    }
+
+    #first-food
+    {
+        margin-left: 20px;
+    }
+
+    .upper-part1 > .input-button-wrapper > .input-text
+    {
+        margin-left: 20px;
+    }
+
+    .upper-part1 > .input-button-wrapper > .input-text #input
+    {
+        margin-left: -30px;
+        width: 200px;
+    }
+    .lower-upper-part1
+    {
+        flex-direction: column;
+    }
 }

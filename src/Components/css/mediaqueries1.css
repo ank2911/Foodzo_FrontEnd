@@ -24,7 +24,7 @@
 
     .heading-nav-container #links
     {
-        /* flex-direction: column; */
+       
         margin-left: -10px;
         margin-top: 60px;
     }
@@ -72,6 +72,287 @@
     .middle-part > .Recipies-small-text
     {
         margin-left: 10px;
+    }
+
+}
+
+@media (max-width:450px)
+{
+    .container1
+    {
+        max-width: 100%;
+    }
+    .heading-nav-container > .heading h1
+    {
+        margin-left: -40px;
+    }   
+    .middle-part > .categories
+    {
+        flex-direction: column;
+        margin-left: 35px;
+    }
+
+    .sweets
+    {
+        margin-bottom: 20px;
+    }
+
+    #misti
+    {
+        margin-left: 20px;
+    }
+
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left:10px;
+    }
+
+    .heading-nav-container #links
+    {
+        
+        margin-left: -55px;
+        margin-top: 60px;
+    }
+
+    .input-button-wrapper > .input-text
+    {
+        margin-left:-65px;
+    }
+
+    .input-text > .text1
+    {
+        width:280px;
+    }
+
+    #home
+    {
+        margin-left: 21px;
+    }
+
+    .text1
+    {
+        margin-right:150px;
+    }
+
+    #button3
+    {
+        margin-left:-249px;
+    }
+
+    .button4
+    {
+        margin-left: 140px;
+    }
+
+    .heading-nav-container>.heading 
+    {
+        margin-left: 5px;
+    }
+
+    .middle-part > .Recipies
+    {
+        margin-left: 10px;
+    }
+
+    .middle-part > .Recipies-small-text
+    {
+        margin-left: 10px;
+    }
+   
+}
+
+@media (max-width:380px)
+{
+    .heading-nav-container > .heading h1
+    {
+        margin-left: -40px;
+    }   
+    .middle-part > .categories
+    {
+        flex-direction: column;
+        margin-left: px;
+    }
+
+    .sweets
+    {
+        margin-bottom: 20px;
+    }
+
+    #misti
+    {
+        margin-left: 20px;
+    }
+
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left:35px;
+    }
+
+    .heading-nav-container #links
+    {
+        
+        margin-left: -55px;
+        margin-top: 60px;
+    }
+
+    .input-button-wrapper > .input-text
+    {
+        margin-left:-65px;
+    }
+
+    .input-text >.text1
+    {
+        width: 250px;
+    }
+
+    #home
+    {
+        margin-left: 21px;
+    }
+
+    .text1
+    {
+        margin-right:150px;
+    }
+
+    #button3
+    {
+        margin-left:-249px;
+    }
+
+    .button4
+    {
+        margin-left: 120px;
+    }
+
+    .heading-nav-container>.heading 
+    {
+        margin-left: 5px;
+    }
+
+    .middle-part > .Recipies
+    {
+        margin-left: 10px;
+    }
+
+    .middle-part > .Recipies-small-text
+    {
+        margin-left: 10px;
+    }
+   
+}
+
+@media (max-width:280px)
+{
+    .nav-bar1 > .home
+    {
+        font-size:20px;
+    }
+    .nav-bar1 > .about
+    {
+        font-size:20px;
+    }
+    .nav-bar1 > .login
+    {
+        font-size:20px;
+    }
+    .nav-bar1 > .signup
+    {
+        font-size:20px;
+    }
+    .container1 > .upper-part1
+    {
+        background-size: cover;
+    }
+    .middle-part > .categories
+    {
+        flex-direction: column;
+        margin-left: 25px;
+    }
+
+    .categories > .sweets
+    {
+        margin-left: 45px;
+        height:150px;
+        width:150px;
+        margin-bottom: 20px;
+        font-size:20px;
+    }
+
+    .categories > .sweets:hover
+    {
+        transform:scale(1.09);
+    }
+
+    .categories #misti
+    {
+        margin-left: 45px;
+    }
+
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left:10px;
+    }
+
+    .heading-nav-container #links
+    {
+       
+        margin-left: -30px;
+        margin-top: 60px;
+    }
+
+    .input-button-wrapper > .input-text
+    {
+        margin-left:-25px;
+    }
+
+    .input-text > .text1
+    {
+        margin-left:-35px;
+        width:210px;
+    }
+
+    #home
+    {
+        margin-left: 21px;
+    }
+
+    .text1
+    {
+        margin-right:150px;
+    }
+
+    #button3
+    {
+        margin-left:-249px;
+    }
+
+    .button1>.button4
+    {
+        margin-left: 70px;
+    }
+
+    .heading-nav-container>.heading 
+    {
+        margin-left: 5px;
+    }
+
+    .middle-part > .Recipies
+    {
+        margin-left: 10px;
+    }
+
+    .middle-part > .Recipies-small-text
+    {
+        margin-left: 10px;
+    }
+
+    .sweets p
+    {
+        margin-top: 90px;
     }
 
 }

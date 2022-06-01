@@ -47,7 +47,7 @@ function UserInterface() {
                 </div>
             </div>
             <div className="lower-upper-part1 w-[auto] h-[auto] mt-[10px] bg-[#171a29] flex">
-                <Link to="#" className="ad mt-[20px] mb-[20px] ml-[100px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/rmu9xmyxpyc3iwgvh6u1")`}}>
+                <Link to="#" id="ads" className="ad mt-[20px] mb-[20px] ml-[100px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/rmu9xmyxpyc3iwgvh6u1")`}}>
                     
                 </Link>
                 <Link to="#" id="ads" className="ad mt-[20px] mb-[20px] ml-[40px] h-[290px] w-[300px] bg-cover hover:scale-110" style={{backgroundImage:`url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/yparhmxrby5lv0ubsel4")`}}>

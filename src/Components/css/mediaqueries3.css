@@ -1,0 +1,110 @@
+@media (max-width: 450px)
+{
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left: 75px;
+    }
+    .heading-nav-container > .heading
+    {
+        margin-left: 50px;
+    }
+    .heading-nav-container > .nav-bar
+    {
+        margin-top: 50px;
+        margin-left: 10px;
+        
+    }
+    .heading-nav-container > .nav-bar>.home
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.About
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.Login
+    {
+        font-size: 25px;
+    }
+    .middle-part img 
+    {
+        width:200px;
+        margin-left: 100px;
+        float: none;
+    }
+}
+
+@media (min-width: 455px) and (max-width:900px)
+{
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left: 230px;
+    }
+    .heading-nav-container > .heading
+    {
+        margin-left: 40px;
+    }
+    .heading-nav-container > .nav-bar
+    {
+        margin-top: 50px;
+        margin-left: 25px;
+        
+    }
+    .heading-nav-container > .nav-bar>.home
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.About
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.Login
+    {
+        font-size: 25px;
+    }
+    .middle-part img 
+    {
+        width:200px;
+        margin-left: 250px;
+        float: none;
+    }
+}
+
+@media (max-width: 300px)
+{
+    .heading-nav-container
+    {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .heading-nav-container > .heading
+    {
+        margin-left: 50px;
+    }
+    .heading-nav-container > .nav-bar
+    {
+        margin-top: 50px;
+        margin-left: 10px;
+        
+    }
+    .heading-nav-container > .nav-bar>.home
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.About
+    {
+        font-size: 25px;
+    }
+    .heading-nav-container > .nav-bar>.Login
+    {
+        font-size: 25px;
+    }
+    .middle-part img 
+    {
+        width:200px;
+        margin-left: 40px;
+        float: none;
+    }
+}
