@@ -9,7 +9,7 @@ function Navbar() {
   }
   return (
     <div>    
-       <div className="w-screen bg-[#6e7eecc9] h-12 flex justify-between items-center">
+       <div className="bg-[#6e7eecc9] h-12 flex justify-between items-center p-6">
         <h1 className="text-4xl text-white font-bold p-2 font-Myfont2">Foodzo</h1>
         {/* <div className="pt-10 pl-96 relative">
         <BiSearch size={29} className="absolute right-1.5 pt-1"/>
@@ -19,8 +19,8 @@ function Navbar() {
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/about' >About Us</Link></li>
           <li><Link to='/signup'>SignUp</Link></li>
-          <li><Link to='/signin'>Login</Link></li>
-          <li><Link to='/admin_page'>Admin Login</Link></li>
+          <li><Link to='/signin'>SignIn</Link></li>
+          {/*<li><Link to='/admin_page'>Admin Login</Link></li>*/}
  
         </ul>
 
