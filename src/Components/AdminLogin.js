@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import { FaUser,FaLock } from "react-icons/fa";
+import Navbar from './Navbar';
 function AdminLogin(props) {
   const [adminuserid, setAdminUserId] = useState("");
   const [adminpassword, setAdminPassword] = useState("");
@@ -40,6 +41,8 @@ function AdminLogin(props) {
   };
 
   return (
+    <div>
+      <Navbar/>
     <div className="myConatiner">
       <h3 className="text-center text-black text-3xl m-6">Admin Login</h3>
 
@@ -69,7 +72,7 @@ function AdminLogin(props) {
           </div>
       </form>
     </div>
-
+    </div>
   );
 }
 export default AdminLogin
