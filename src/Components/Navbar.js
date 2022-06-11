@@ -9,8 +9,8 @@ function Navbar() {
   }
   return (
     <div>    
-       <div className="bg-black h-12 flex items-center p-9">
-       <img src='./images/Foodzo (3).png' width='165' height='165' className='object-contain py-2 mx-4'/>
+       <div className="bg-black h-12 flex items-center p-9 overflow-hidden">
+       <img src='./images/logo.png' width='165' height='165' className='object-contain py-2 mx-4'/>
       {/*<h1 className="text-4xl text-orange-400 py-2 font-Myfont2 ">Foodzo</h1>*/}
         {/* <div className="pt-10 pl-96 relative">
         <BiSearch size={29} className="absolute right-1.5 pt-1"/>

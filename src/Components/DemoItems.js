@@ -3,7 +3,7 @@ import React from 'react'
 const DemoItems=[
  {
    id: 1,
-   image:'images/biryani.avif',
+   image:'images/chicken_biryani.jpeg',
    name:"Chicken Biryani",
    category: "Non-Veg",
    price: "120 Rs.",
@@ -11,7 +11,7 @@ const DemoItems=[
 },
 {
     id: 2,
-    image:'images/mutton-biryani.avif',
+    image:'images/mutton_biryani.jpeg',
     name:"Mutton Biryani",
     category: "Non-Veg",
     price: "320 Rs.",
@@ -19,7 +19,7 @@ const DemoItems=[
  },
  {
     id: 3,
-    image:'images/noodles.avif',
+    image:'images/noodles.jpeg',
     name:"Noodles",
     category: "Chinese",
     price: "80 Rs.",
@@ -27,7 +27,7 @@ const DemoItems=[
  },
  {
     id: 4,
-    image:'images/rolls.avif',
+    image:'images/rolls.jpeg',
     name:"Rolls",
     category: "Veg",
     price: "100 Rs.",
@@ -35,7 +35,7 @@ const DemoItems=[
  },
  {
     id: 5,
-    image:'images/sweets3.avif',
+    image:'images/sweet1.jpeg',
     name:"Sweets",
     category: "Sweets",
     price: "60 Rs.",
@@ -43,7 +43,7 @@ const DemoItems=[
  },
  {
    id: 6,
-   image:'images/sweets3.avif',
+   image:'images/sweet2.jpeg',
    name:"Sweets",
    category: "Sweets",
    price: "60 Rs.",
