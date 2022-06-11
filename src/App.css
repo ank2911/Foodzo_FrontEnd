@@ -26,5 +26,16 @@
     .btn{
         @apply flex px-6 py-2 border-2 border-black text-black rounded-full hover:bg-blue-700 bg-opacity-100 
     }
-    }
+}
+@layer components {
+        .badge{
+            @apply absolute top-1 right-2 rounded-full bg-black w-4 h-4 text-white text-sm  leading-tight text-center
+        }
+        .badge-sm{
+            @apply absolute top-52 right-44 rounded-full bg-black w-6 h-6 text-white text-lg  leading-tight text-center
+        }
+        .cart-btn {
+          @apply font-sans cursor-pointer bg-transparent  py-2 px-8 rounded-3xl ml-4 hover:bg-yellow-900 hover:border-yellow-900 hover:text-white active:bg-yellow-900 active:border-yellow-900 active:text-white transition-colors;
+        }
+    }  
     /* mt-72 ml-52  */

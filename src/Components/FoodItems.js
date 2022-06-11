@@ -1,6 +1,7 @@
 import React from 'react'
 
 function FoodItems({ items }) {
+    
     return (
         <div className='flex justify-center flex-wrap font-Myfont'>
 
@@ -10,7 +11,7 @@ function FoodItems({ items }) {
 
                     return (
 
-                        <div className="mt-8 w-64 h-72 bg-slate-300 m-4 rounded-md pb-3 hover:scale-110" key={id}>
+                        <div className="mt-8 w-64 h-72 bg-red-300 m-4 rounded-md pb-3 hover:scale-110" key={id}>
 
                             <div>
                                 <img src={image} alt="Food" className='w-96 h-48 p-2 border-1 rounded-3xl' />

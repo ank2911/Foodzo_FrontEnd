@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { BiMenu , BiSearch} from "react-icons/bi";
+import { BiMenu} from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-function Navbar() {
+import { MdShoppingCart } from "react-icons/md";
+import CartContext from '../Store/CartContext';
+function Navbar(props) {
+  // const cartContext= useContext(CartContext);
+  // const totalItems=cartContext.items.reduce((currentNo,item) => {
+  //   return currentNo+ item.amount;
+  // }, 0);
   const [open, setOpen] = useState(false)
   const navHandler = () => {
     setOpen(!open)
@@ -20,23 +26,26 @@ function Navbar() {
           <li><Link to='/about' >About Us</Link></li>
           <li><Link to='/signup'>SignUp</Link></li>
           <li><Link to='/signin'>Login</Link></li>
-          <li><Link to='/admin_page'>Admin Login</Link></li>
- 
+          <li><Link to='/cart'><MdShoppingCart size={25} />  <span className="badge">0</span></Link></li>
+          {/* <li><Link to='/admin_page'>Admin Login</Link></li>
+  */}
         </ul>
-
+       
         <div className="md:hidden right-0 mr-3" onClick={navHandler}>
           {open ? <AiOutlineClose size={25} /> : <BiMenu size={30} />}
         </div>
-
+        
       </div>
-
+      
       <div onClick={navHandler} className={open ? "absolute w-full right-0 top-15 bg-[#e38b26] px-4 py-2 flex flex-col duration-500 z-50" : "absolute hidden"}>
-        <ul>
+      
+        <ul className="md:hidden">
           <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/'>Home</Link></li>
           <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/about'>About Us</Link></li>
           <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/signup'>SignUp</Link></li>
           <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/signin'>Login</Link></li>
-          <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/admin_page'>Admin Login</Link></li>
+          <Link to='/cart'><MdShoppingCart size={45} className="w-full hover:bg-blue-300"/><span className="badge-sm">0</span></Link>
+          {/* <li className="text-black p-3 border-b-2 border-black hover:bg-blue-300"><Link to='/admin_page'>Admin Login</Link></li> */}
         </ul>
       </div>
       </div>

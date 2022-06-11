@@ -1,12 +1,23 @@
 import React,{useState} from 'react'
+import Cart from '../Components/Cart'
 import DemoItems from '../Components/DemoItems'
 import FoodItems from '../Components/FoodItems'
 import Navbar from '../Components/Navbar'
+import CartProvider from '../Store/CartProvider'
+
 import { initialState,reducer } from './useReducer'
 // export const UserContext= createContext();
 
 function HomePage() {
     const [items,setItems]= useState(DemoItems);
+    // const [showcart,setShowcart]= useState(false);
+
+    // const openCart = () =>{
+    //     setShowcart(true);
+    // }
+    // const closeCart = () =>{
+    //     setShowcart(false);
+    // }
     // const [state, dispatch]=useReducer(reducer,initialState);
 
     const filterDemoItems =(category) =>{
@@ -18,17 +29,17 @@ function HomePage() {
     return (
         
                 
-            <div className="sticky font-Myfont">
+            <div className="font-Myfont">
               {/* <UserContext.Provider value={{state, dispatch}}> */}
                 <Navbar/>
                 {/* </UserContext.Provider> */}
               <div className='relative ' >
-                
-              {/* <p className="absolute flex flex-col-reverse text-white text-4xl font-extrabold md:text-7xl ">BEST PIZZA <span className="text-yellow-500 flex w-12 ml-24">FOR </span><span className="text-red-700 ml-4">FOODIES</span></p>
-               <button className="absolute flex flex-wrap rounded-md w-32 h-10 bg-green-700 mt-72 ml-10 md:mt-64 md:ml-1 md:w-40 md:h-12">ORDER NOW</button> 
-               <img src="images/Pizza.jpg" alt="none" className="absolute h-auto max-w-[60%] ml-24 md:right-3 md:absolute md:h-[90%] md:max-w-[100%] translate-y-10"/> 
+        
+              {/* <img src="images/Pizza.jpg" alt="none" className="absolute h-auto max-w-[60%] ml-24 md:right-3 md:absolute md:h-[90%] md:max-w-[100%] translate-y-10"/>  */}
+               {/* <button className="absolute flex flex-wrap rounded-md w-32 h-10 bg-green-700 mt-72 ml-10 md:mt-64 md:ml-1 md:w-40 md:h-12">ORDER NOW</button> 
               <img src="images/tomato.jpg" alt="none" className="mt-10 w-52 h-52 bg-right-top"/>
     <img src="images/food_deco.jpg" alt="none" className="absolute -left-28 w-80 h-80 mt-16"/> */}
+             
               <img src="images/BgImage.jpg" alt="Book Your Pizza Now" className="w-screen h-screen object-cover"/>
               </div>
 <div>
