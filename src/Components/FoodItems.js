@@ -10,7 +10,7 @@ function FoodItems({ items }) {
 
                     return (
 
-                        <div className="mt-8 w-64 h-72 bg-slate-300 rounded-md m-4 pb-3 hover:scale-110" key={id}>
+                        <div className="mt-8 w-64 h-72 bg-slate-300 rounded-md m-4 pb-3 transition ease-in-out delay-75 hover:scale-110" key={id}>
 
                             <div>
                                 <img src={image} alt="Food" className='w-96 h-48 p-2 border-1 rounded-2xl' />

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DemoItems=[
  {
    id: 1,
@@ -36,16 +34,16 @@ const DemoItems=[
  {
     id: 5,
     image:'images/sweet1.jpeg',
-    name:"Sweets",
-    category: "Sweets",
+    name:"Dessert",
+    category: "Dessert",
     price: "60 Rs.",
    
  },
  {
    id: 6,
    image:'images/sweet2.jpeg',
-   name:"Sweets",
-   category: "Sweets",
+   name:"Dessert",
+   category: "Dessert",
    price: "60 Rs.",
   
 },

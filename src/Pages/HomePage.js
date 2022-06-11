@@ -3,7 +3,7 @@ import DemoItems from '../Components/DemoItems'
 import FoodItems from '../Components/FoodItems'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { initialState, reducer } from './useReducer'
+//import { initialState, reducer } from './useReducer'
 // export const UserContext= createContext();
 
 function HomePage() {
@@ -16,12 +16,13 @@ function HomePage() {
         });
         setItems(updatedItems);
     }
+
+    const buttonClass = 'bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white hover:scale-110'
     return (
-
-
-        <div className="sticky font-Myfont">
+        <div className="font-Myfont">
             {/* <UserContext.Provider value={{state, dispatch}}> */}
-            <Navbar />
+            <Navbar/>
+            
             {/* </UserContext.Provider> */}
             <div className='relative' >
 
@@ -30,16 +31,16 @@ function HomePage() {
                <img src="images/Pizza.jpg" alt="none" className="absolute h-auto max-w-[60%] ml-24 md:right-3 md:absolute md:h-[90%] md:max-w-[100%] translate-y-10"/> 
               <img src="images/tomato.jpg" alt="none" className="mt-10 w-52 h-52 bg-right-top"/>
     <img src="images/food_deco.jpg" alt="none" className="absolute -left-28 w-80 h-80 mt-16"/> */}
-                <img src="images/hero3.jpg" alt="image" className="w-screen h-screen object-cover" />
+                <img src="images/hero3.jpg" alt="hero" className="w-screen h-screen object-cover" />
             </div>
-            <div className='grid place-content-center justify-center'>
-                <h1 className='m-2 p-2 text-black text-3xl flex justify-center'>Order Your Favourite Food Now</h1>
+            <div className='grid place-content-center justify-center p-4'>
+                <h1 className='m-2 p-2 text-black text-2xl flex justify-center'>Order Your Favourite Food Now</h1>
                 <div className='flex justify-center'>
-                    <button className="bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white" onClick={() => setItems(DemoItems)}>All</button>
-                    <button className="bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white" onClick={() => filterDemoItems('Veg')}>Veg</button>
-                    <button className="bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white" onClick={() => filterDemoItems('Non-Veg')}>Non-Veg</button>
-                    <button className="bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white" onClick={() => filterDemoItems('Chinese')}>Chinese</button>
-                    <button className="bg-orange-400 rounded-full w-20 m-2 p-2 hover:bg-orange-500 text-white" onClick={() => filterDemoItems('Sweets')}>Sweets</button>
+                    <button className={buttonClass} onClick={() => setItems(DemoItems)}>All</button>
+                    <button className={buttonClass} onClick={() => filterDemoItems('Veg')}>Veg</button>
+                    <button className={buttonClass} onClick={() => filterDemoItems('Non-Veg')}>Non-Veg</button>
+                    <button className={buttonClass} onClick={() => filterDemoItems('Chinese')}>Chinese</button>
+                    <button className={buttonClass} onClick={() => filterDemoItems('Dessert')}>Dessert</button>
                 </div>
             </div>
 
@@ -47,7 +48,7 @@ function HomePage() {
                 <FoodItems items={items} />
             </div>
             <div className='bg-black h-[50vh]'>
-                <Footer/>
+                <Footer />
             </div>
         </div>
 

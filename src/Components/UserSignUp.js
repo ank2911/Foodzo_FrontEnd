@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { FaUser,FaLock } from "react-icons/fa";
 import { MdEmail,MdCall } from "react-icons/md";
-import Navbar from "./Navbar";
 function SignUpForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -51,7 +50,6 @@ function SignUpForm(props) {
 
   return (
     <div className="font-Myfont">
-      <Navbar/>
       <div className="myConatiner">
         <h3 className="text-center text-black text-3xl m-6">Sign Up</h3>
         <form onSubmit={handleSubmit}>
