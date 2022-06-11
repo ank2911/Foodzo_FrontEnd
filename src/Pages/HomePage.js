@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import DemoItems from '../Components/DemoItems'
 import FoodItems from '../Components/FoodItems'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 import { initialState, reducer } from './useReducer'
 // export const UserContext= createContext();
 
@@ -29,7 +30,7 @@ function HomePage() {
                <img src="images/Pizza.jpg" alt="none" className="absolute h-auto max-w-[60%] ml-24 md:right-3 md:absolute md:h-[90%] md:max-w-[100%] translate-y-10"/> 
               <img src="images/tomato.jpg" alt="none" className="mt-10 w-52 h-52 bg-right-top"/>
     <img src="images/food_deco.jpg" alt="none" className="absolute -left-28 w-80 h-80 mt-16"/> */}
-                <img src="images/BgImage.jpg" alt="Book Your Pizza Now" className="w-screen h-screen object-cover" />
+                <img src="images/hero3.jpg" alt="Book Your Pizza Now" className="w-screen h-screen object-cover" />
             </div>
             <div>
                 <h1 className='m-2 text-xl'>Order Your Favourite Food Now</h1>
@@ -44,6 +45,9 @@ function HomePage() {
 
             <div className='bg-slate-100 max-w-full min-h-screen '>
                 <FoodItems items={items} />
+            </div>
+            <div className='bg-black h-[50vh]'>
+                <Footer/>
             </div>
         </div>
 
