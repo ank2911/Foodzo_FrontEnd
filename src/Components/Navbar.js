@@ -17,11 +17,11 @@ function Navbar() {
         <input type="text" placeholder=" Search Your Items here..." className="pl-3 border-2 border-black bg-white placeholder:text-black rounded-full"></input>
         </div> */}
         <ul className="hidden md:flex space-x-4 w-screen py-4 text-lg mx-6  min-w-max">
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/'>Home<span className='text-3xl font-medium'>⌄</span></Link></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/about' >About Us <span className='text-3xl font-medium'>⌄</span></Link></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signup'>SignUp <span className='text-3xl font-medium'>⌄</span></Link></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>SignIn <span className='text-3xl font-medium'>⌄</span></Link></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>Contact <span className='text-3xl font-medium'></span></Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/'>Home</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/about' >About Us</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signup'>SignUp</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>SignIn</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>Contact</Link></li>
 
           {/*<li><Link to='/admin_page'>Admin Login</Link></li>*/}
  
