@@ -14,16 +14,16 @@ function FoodItems({ items }) {
 
                             <div>
                                 <img src={image} alt="Food" className='w-96 h-48 p-2 border-1 rounded-2xl' />
+                                <h1 className="mx-2 font-semibold text-xl">{name}</h1>
                             </div>
 
                             <div>
-                                <div className='img-text mb-[10px]'>
-                                    <button className="absolute rounded-full w-16 ml-44 mt-12 text-white bg-orange-400 hover:bg-orange-500">Add</button>
-                                    <h1 className="mx-2 font-semibold text-xl">{name}</h1>
-                                </div>
                                 <div>
                                     <h2 className="mx-2">{price}</h2>
                                 </div>
+                            </div>
+                            <div className=' flex justify-end px-4 img-text mb-[10px]'>
+                                <button className="absolute rounded-full w-16  text-white bg-orange-400 hover:bg-orange-500">Add</button>
                             </div>
 
                         </div>

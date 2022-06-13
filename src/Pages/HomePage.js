@@ -35,7 +35,7 @@ function HomePage() {
             </div>
             <div className='grid place-content-center justify-center p-4'>
                 <h1 className='m-2 p-2 text-black text-2xl flex justify-center'>Order Your Favourite Food Now</h1>
-                <div className='flex justify-center'>
+                <div className='shrink justify-center'>
                     <button className={buttonClass} onClick={() => setItems(DemoItems)}>All</button>
                     <button className={buttonClass} onClick={() => filterDemoItems('Veg')}>Veg</button>
                     <button className={buttonClass} onClick={() => filterDemoItems('Non-Veg')}>Non-Veg</button>
