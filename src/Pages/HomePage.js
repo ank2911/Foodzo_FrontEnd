@@ -47,7 +47,7 @@ function HomePage() {
             <div className='bg-slate-100 max-w-full min-h-screen '>
                 <FoodItems items={items} />
             </div>
-            <div className='bg-black h-[50vh]'>
+            <div className='bg-black'>
                 <Footer />
             </div>
         </div>
