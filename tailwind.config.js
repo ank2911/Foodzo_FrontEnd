@@ -3,9 +3,13 @@ module.exports = {
      "./src/**/*.{js,jsx,ts,tsx}",
 ],
   theme: {
-    container:{
-     center: true,
-    }
-  },
-  plugins: [],
+     extend:{
+       fontFamily:{
+        Myfont:["Barlow Condensed", "sans-serif"],
+        Myfont2:["Cookie","Ania Kruk"],
+       }
+     }  
+  }
+
+
 }

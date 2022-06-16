@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function UserLoginPage(props) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [isError, setIsError] = useState("");
-  
+
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -17,58 +19,63 @@ function UserLoginPage(props) {
     }
 
     axios.post(`${process.env.REACT_APP_API_ENDPOINT}/api/login`, userinfo)
-    .then((res) => {
-      const id = res.data.user._id
-     
-    })
-    .catch((error)=>{
-      setIsError("Invalid email / password")
-    })
+      .then((res) => {
+        const id = res.data.user._id
+
+      })
+      .catch((error) => {
+        setIsError("Invalid email / password")
+      })
 
     setEmail("");
     setPass("");
   };
 
   return (
-    <div className="container">
-      <br />
-      <h3 className="user-login">User Log In</h3>
-      <br /> <br /> <br />
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          className="form-control form-control-sm"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter Email"
-          required
-        />
-
-        <input
-          type="password"
-          className="form-control form-control-sm"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
-          placeholder="Enter Password"
-          required
-        />
-        <div className="error-text text-danger">{isError}</div>
-        <input
-          type="submit"
-          value="Log In"
-          className="btn btn-lg btn-outline-dark rounded-pill"
-        />
-        <div className="form-row">
-          <div className="form-group col-md-12 foot-text">
-            <p>
-              New User?
-              <Link to="/">
-                Sign Up
-              </Link>
-            </p>
-          </div>
+    <div className="font-Myfont">
+      <div className="myConatiner">
+        <h3 className="text-center text-black text-3xl m-6">User Log In</h3>
+        <form onSubmit={handleSubmit}>
+        <div className="relative">
+          <MdEmail size={18} className="absolute top-1"/>
+          <input
+            type="email"
+            className="focus: outline-none placeholder:text-black pl-5"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter Email"
+            required
+          />
         </div>
-      </form>
+        <div className="relative">
+          <FaLock className="absolute top-1"/>
+          <input
+            type="password"
+            className="focus: outline-none placeholder:text-black pl-5"
+            value={pass}
+            onChange={(e) => setPass(e.target.value)}
+            placeholder="Enter Password"
+            required
+          />
+          </div>
+          <div className="error-text text-danger">{isError}</div>
+          <div className="flex justify-center relative">
+          <button type="submit" className="btn">
+            Log In
+          </button>
+          </div>
+          <div className="form-row">
+            <div className="form-group col-md-12 foot-text">
+              <p className="my-4">
+                New User?
+                <Link to="/signup" className="">
+                  Sign Up
+                </Link>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

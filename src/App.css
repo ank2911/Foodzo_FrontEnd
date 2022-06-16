@@ -1,113 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html, body{
-    text-align: center;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #a33400;
-    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
-    font-family: 'Barlow Condensed', sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Home page CSS */
-
-.container{
-    position: relative;
-    top: 10vh;
-    padding: 2% 5%;
-    margin: auto;
-    width : 100%;
-    max-width: 500px;
-    background-color: rgb(25, 181, 224);
-    color: #1a3d55;
-    border-radius: 30px;
-}
-.para-text {
-    color:#705d54;
-}
-
-.form-control{
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 1.1rem;
-    margin-bottom: 35px;
-}
-
-.form-control::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 0.8;
-  }
-
-.form-control:focus{
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    box-shadow: none;
-}
-
-.login{
-    margin-top: 1.5rem;
-    line-height: 1.5rem;
-}
-.signup{
-    margin-top: 2rem;
-    line-height: 1.5rem;
-}
-
-/* Login page CSS */
-.welcome-text,
-.user-login {
-    font-family: 'Patua One', cursive;
-    color:#000000;
-}
-
-/* SignUp page CSS */
-.label-text {
-    margin-top: 1rem;
-    margin-bottom: .25rem;
-    font-weight: 500;
-    font-size: 1.15rem;
-}
-.signup-text{
-    color:#000000;
-    font-family: 'Patua One', cursive;
-}
-.admin-text{
-  color:#000000;
-  font-family: 'Patua One',cursive;
-}
-.foot-text{
-    margin-top: 30px;
-    color: #070000;
-}
-
-.foot-text:hover{
-    color: #254f0d;
-}
-
-.foot-text a{
-    text-decoration: none;
-    margin-left: 5px;
-    background-color: rgba(219, 219, 219, 0.493);
-    padding: 5px;
-    border-radius: 20px;
-    color: inherit;
-}
-
-.foot-text a:hover{
-    color: #000;
-}
-
-
-
-
-
-
-
+@layer base{
+   
+    li{
+        @apply text-black
+    }
+    input{
+        @apply bg-transparent border-0 rounded-none border-b-2 border-b-black text-black font-normal text-lg mb-9 w-96
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+    .myConatiner{
+        @apply container relative top-14 px-2 py-2 m-auto w-full max-w-md bg-[#52e4ce] rounded-3xl
+    }
+    .btn{
+        @apply flex px-6 py-2 border-2 border-black text-black rounded-full hover:bg-blue-700 bg-opacity-100 
+    }
+    }
