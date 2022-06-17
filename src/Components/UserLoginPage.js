@@ -4,14 +4,12 @@ import { Link } from 'react-router-dom';
 import { FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Navbar from "./Navbar";
-import CartProvider from "../Store/CartProvider";
-// import {UserContext} from "../Pages/HomePage"
 
 function UserLoginPage(props) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [isError, setIsError] = useState("");
-  // const {state, dispatch} = useContext(UserContext);
+  
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
