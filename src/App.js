@@ -2,10 +2,13 @@ import './App.css';
 import React,{useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import UserSignUp from './Components/UserSignUp';
-import UserLoginPage from './Components/UserLoginPage';
+import UserLoginPage from './Components/UserLoginPage'
 import AdminLogin from './Components/AdminLogin';
 import HomePage from './Pages/HomePage';
+<<<<<<< HEAD
 import Cart from './Pages/Cart';
+=======
+>>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
 
 function App() {
   const [cart,setCart] =useState([]);
@@ -43,11 +46,19 @@ const handleRemoveFromCart = (id) => {
   return (
     <Router>
       <Routes>
+<<<<<<< HEAD
         <Route path="/" element={<HomePage cart={ cart} handleAddToCart={handleAddToCart}/>} exact/>
         <Route path="/signup" element={<UserSignUp />} />
         <Route path="/signin" element={<UserLoginPage />} />
         <Route path="/admin_page" element={<AdminLogin />} />
         <Route path="/cart" element={<Cart handleRemoveFromCart={handleRemoveFromCart} handleAddToCart={handleAddToCart} cart={ cart}/>}/>
+=======
+        <Route path="/" element={<HomePage/>} exact/>
+        <Route path="/signup" element={<UserSignUp/>} />
+        <Route path="/signin" element={<UserLoginPage/>} />
+        <Route path="/admin" element={<AdminLogin />} />
+
+>>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
       </Routes>
 
     </Router>
