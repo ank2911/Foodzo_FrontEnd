@@ -34,33 +34,20 @@ const DemoItems=[
  {
     id: 5,
     image:'images/sweet1.jpeg',
-<<<<<<< HEAD
-    name:"Sweet",
-    category: "Sweets",
-    price: 560 ,
-    amount: 1
-=======
+
     name:"Dessert",
     category: "Dessert",
-    price: "60 Rs.",
+    price: 60,
+    amount: 1
    
->>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
  },
  {
    id: 6,
    image:'images/sweet2.jpeg',
-<<<<<<< HEAD
-   name:"Sweets",
-   category: "Sweets",
-   price: 60 ,
-   amount: 1
-}
-=======
    name:"Dessert",
    category: "Dessert",
-   price: "60 Rs.",
+   price: 60,
   
 },
->>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
 ];
 export default DemoItems;

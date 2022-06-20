@@ -29,7 +29,7 @@
 }
 @layer components {
         .badge{
-            @apply absolute top-4 right-7 rounded-full bg-black w-4 h-4 text-white text-sm  leading-tight text-center
+            @apply absolute top-3 right-6 rounded-full bg-black w-4 h-4 text-white text-sm  leading-tight text-center
         }
         .badge-sm{
             @apply absolute top-5 right-4 rounded-full bg-black w-6 h-6 text-white text-lg  leading-tight text-center

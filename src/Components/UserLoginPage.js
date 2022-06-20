@@ -1,19 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import { FaLock } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import Navbar from "./Navbar";
-
-function UserLoginPage(props) {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  const [isError, setIsError] = useState("");
-  
-=======
 
 function SignInModal({buttonName}) {
->>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -25,63 +13,6 @@ function SignInModal({buttonName}) {
         //console.log(email, password)
     }
 
-<<<<<<< HEAD
-    axios.post(`${process.env.REACT_APP_API_ENDPOINT}/api/login`, userinfo)
-      .then((res) => {
-        const id = res.data.user._id
-
-      })
-      .catch((error) => {
-        setIsError("Invalid email / password")
-      })
-
-    setEmail("");
-    setPass("");
-  };
-    // dispatch({type:"USER", payload:true})
-  return (
-    <div className="font-Myfont">
-      <Navbar onShow={props.onShow}/>
-      <div className="myConatiner">
-        <h3 className="text-center text-black text-3xl m-6">User Log In</h3>
-        <form onSubmit={handleSubmit}>
-        <div className="relative">
-          <MdEmail size={18} className="absolute top-1"/>
-          <input
-            type="email"
-            className="focus: outline-none placeholder:text-black pl-5"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter Email"
-            required
-          />
-        </div>
-        <div className="relative">
-          <FaLock className="absolute top-1"/>
-          <input
-            type="password"
-            className="focus:outline-none placeholder:text-black pl-5"
-            value={pass}
-            onChange={(e) => setPass(e.target.value)}
-            placeholder="Enter Password"
-            required
-          />
-          </div>
-          <div className="error-text text-danger">{isError}</div>
-          <div className="flex justify-center relative">
-          <button type="submit" className="btn">
-            Log In
-          </button>
-          </div>
-          <div className="form-row">
-            <div className="form-group col-md-12 foot-text">
-              <p className="my-4">
-                New User?
-                <Link to="/signup" className="">
-                  Sign Up
-                </Link>
-              </p>
-=======
     const inputClass = 'bg-white my-3 text-gray-600 border-1 border-gray-300 outline-gray-300 rounded-md px-2';
     return (
             <>
@@ -99,10 +30,9 @@ function SignInModal({buttonName}) {
                         <Link to='/signup' className='text-sm text-orange-400 hover:text-orange-500 px-2'>Haven't an account?</Link>
                     </div>
                 </form>
->>>>>>> 8ea0569eccbbb18125c69bc6957533c865416a87
             </div>
         </>
     )
 }
 
-export default SignInModal
+export default SignInModal;
