@@ -16,7 +16,7 @@ function SignInModal({buttonName}) {
     const inputClass = 'bg-white my-3 text-gray-600 border-1 border-gray-300 outline-gray-300 rounded-md px-2';
     return (
             <>
-            <div className='bg-slate-200 fixed inset-x-0 z-50  grid place-content-center h-full'>
+            <div className='bg-orange-100 fixed inset-x-0 z-50  grid place-content-center h-full'>
                 <form className='grid place-content-center w-screen' onSubmit={handleSubmit}>
                     <div className='shrink content-center p-6 mx-4 max-w-md bg-white rounded-xl shadow-xl'>
                         <div className='flex justify-end'>
