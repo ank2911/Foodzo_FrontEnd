@@ -1,78 +1,40 @@
 import React, { useState } from 'react';
-import axios from "axios";
-import { FaUser,FaLock } from "react-icons/fa";
-import Navbar from './Navbar';
-function AdminLogin(props) {
-  const [adminuserid, setAdminUserId] = useState("");
-  const [adminpassword, setAdminPassword] = useState("");
-
-  // const handleSubmit = (evt) => {
-  //   evt.preventDefault();
-
-  //   if ((adminuserid === "mass") && (adminpassword === "takeme")) {
-  //     sessionStorage.setItem("Key_Veriable", 'ADMIN')
-
-  //     props.history.push('/')
-
-  //   }
+import { Link } from 'react-router-dom';
 
 
-  //   setAdminUserId('')
-  //   setAdminPassword('')
+function AdminLogin({ buttonName }) {
 
-  // }
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
-    const userinfo = {
-      user: adminuserid,
-      password: adminpassword
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setUsername('');
+        setPassword('');
+        //console.log(username, password)
     }
 
-    axios.post(`${process.env.REACT_APP_API_ENDPOINT}/api/login`, userinfo)
-      .then((res) => {
-        const id = res.data.user._id
-
-      })
-      
-
-    setAdminUserId("");
-    setAdminPassword("");
-  };
-
-  return (
-    <div>
-      <Navbar/>
-    <div className="myConatiner">
-      <h3 className="text-center text-black text-3xl m-6">Admin Login</h3>
-
-      <form onSubmit={handleSubmit}>
-        <div className="relative">
-          <FaUser className="absolute top-1" />
-          <input type="text"
-            value={adminuserid}
-            className="focus: outline-none placeholder:text-black pl-5"
-            onChange={(e) => setAdminUserId(e.target.value)}
-            placeholder="Admin Username"
-            required />
-        </div>
-        <div className="relative">
-          <FaLock className="absolute top-1" />
-          <input type="password"
-            value={adminpassword}
-            className="focus: outline-none placeholder:text-black pl-5"
-            onChange={(e) => setAdminPassword(e.target.value)}
-            placeholder="Password"
-            required />
-        </div>
-        <div className="flex justify-center relative">
-        <button type="submit" className="btn">
-          Login
-        </button>
-          </div>
-      </form>
-    </div>
-    </div>
-  );
+    const inputClass = 'bg-white my-3 text-gray-600 border-1 border-gray-300 outline-gray-300 rounded-md px-2';
+    return (
+        <>
+            <div className='bg-purple-100 fixed inset-x-0 z-50  grid place-content-center h-full'>
+                <form className='grid place-content-center w-screen' onSubmit={handleSubmit}>
+                    <div className='shrink content-center p-6 mx-4 max-w-md bg-white rounded-xl shadow-xl'>
+                        <div className='flex justify-end'>
+                        </div>
+                        <Link to='/' className='flex justify-end'><button className='text-sm text-slate-400 hover:text-slate-500 hover:scale-110'>X</button></Link>
+                        <p className=' flex justify-center text-2xl text-gray-500 mb-4 mx-2'>Admin</p>
+                        <input type="text" placeholder='username' onChange={(e) => { setUsername(e.target.value) }} value={username} className={inputClass} required />
+                        <input type="password" placeholder='Password' onChange={(e) => { setPassword(e.target.value) }} value={password} className={inputClass} required />
+                        <div className='flex justify-end'>
+                            <button type='submit' className='text-white bg-purple-400 hover:bg-purple-500 hover:scale-110 rounded-full py-1 px-4 my-4'>Sign In</button>
+                        </div>
+                        <Link to='/signup' className='text-sm text-purple-400 hover:text-purple-500 px-2'>Forgot password?</Link>
+                    </div>
+                </form>
+            </div>
+        </>
+    )
 }
-export default AdminLogin
+
+export default AdminLogin;

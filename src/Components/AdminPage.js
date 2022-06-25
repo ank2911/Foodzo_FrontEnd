@@ -9,24 +9,24 @@ function AdminPage() {
     const[comm1,setcomm1]=useState(0);
     const[comm2,setcomm2]=useState(0);
   return (
-    <div>
+    <div className='contianer-fluid bg-purple-100 h-screen w-screen'>
         <div className="container">
-            <div className="upper-part bg-white h-7 flex mt-[30px]">
+            <div className="upper-part flex mt-[30px]">
                 <div className="left-part text-black">
                     <h1>ADMIN</h1>
                 </div>
-                <div className="middle-part ml-[600px] w-auto flex">
-                    <div className="Total-Comm bg-blue-600 w-[150px] text-white rounded-md mx-4">
+                <div className="flex middle-part ml-[600px]">
+                    <div className="Total-Comm bg-blue-600 h-8 px-2 pt-1 text-white rounded-md mx-4">
                         <label>Total Commision: {comm}</label>
                     </div>
-                    <div className="Total-Comm bg-green-600 w-[150px] text-white rounded-md mx-4">
+                    <div className="Total-Comm bg-green-600 h-8 px-2 pt-1 text-white rounded-md mx-4">
                         <label>Commision Today: {comm1}</label>
                     </div>
-                    <div className="Total-Comm bg-red-600 w-[200px] text-white rounded-md mx-4">
+                    <div className="Total-Comm bg-red-600 h-8 px-2 pt-1 text-white rounded-md mx-4">
                         <label>Commision last 30 days: {comm2}</label>
                     </div>
                     
-                    <button className="rounded-md bg-gray-600 mx-4 w-[100px] text-white">Visit Website</button>
+                    <button className="rounded-md bg-gray-600 h-8 px-2 pt-1 text-white mx-4">Visit Website</button>
                     
                 </div>
                 

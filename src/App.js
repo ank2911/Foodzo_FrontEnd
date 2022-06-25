@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import UserSignUp from './Components/UserSignUp';
 import UserLoginPage from './Components/UserLoginPage'
 import AdminLogin from './Components/AdminLogin';
+import AdminPage from './Components/AdminPage';
 import HomePage from './Pages/HomePage';
 import Cart from './Pages/Cart';
 
@@ -49,7 +50,8 @@ const handleDeleteFromCart = (id) =>{
         <Route path="/" element={<HomePage cart={ cart} handleAddToCart={handleAddToCart}/>} exact/>
         <Route path="/signup" element={<UserSignUp />} />
         <Route path="/signin" element={<UserLoginPage />} />
-        <Route path="/admin_page" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/admin_page" element={<AdminPage />} />
         <Route path="/cart" element={<Cart handleDeleteFromCart={handleDeleteFromCart} handleRemoveFromCart={handleRemoveFromCart} handleAddToCart={handleAddToCart} cart={ cart}/>}/>
       </Routes>
 
