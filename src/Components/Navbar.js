@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BiMenu} from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import SignInModal from './SignInModal';
-import SignUpModal from './SignUpModal';
+
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -22,10 +21,8 @@ function Navbar() {
         <ul className="hidden md:flex space-x-4 w-screen py-4 text-lg mx-6  min-w-max">
           <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/'>Home</Link></li>
           <li className='text-sm font-semibold text-white hover:text-orange-400'><a href='#footer'>AboutUs</a></li>
-          {/*<li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signup'>SignUp</Link></li>*/}
-          <SignUpModal buttonName={'SignUp'}/>
-          <SignInModal buttonName={'SignIn'}/>
-          {/*<li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>SignIn</Link></li>*/}
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signup'>SignUp</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>SignIn</Link></li>
           <li className='text-sm font-semibold text-white hover:text-orange-400'><a href='#footer'>Contact</a></li>
 
           {/*<li><Link to='/admin_page'>Admin Login</Link></li>*/}
@@ -41,7 +38,7 @@ function Navbar() {
       <div onClick={navHandler} className={open ? "absolute w-1/2 right-0 top-15 bg-black px-4 py-2 flex flex-col duration-500 z-50" : "absolute hidden"}>
         <ul>
           <li className="text-white p-3 hover:text-orange-400"><Link to='/'>Home</Link></li>
-          <li className="text-white p-3 hover:text-orange-400"><a href='#footer'>AboutUs</a></li>
+          <li className="text-white p-3 hover:text-orange-400"><Link to='/'>AboutUs</Link></li>
           <li className="text-white p-3 hover:text-orange-400"><Link to='/signup'>SignUp</Link></li>
           <li className="text-white p-3 hover:text-orange-400"><Link to='/signin'>SignIn</Link></li>
           <li className="text-white p-3 hover:text-orange-400"><a href='#footer'>Contact</a></li>

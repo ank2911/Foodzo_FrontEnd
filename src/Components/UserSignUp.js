@@ -26,6 +26,7 @@ function SignUpModal({buttonName}) {
                     <div className='shrink content-center p-6 mx-4 max-w-md bg-white rounded-xl shadow-xl'>
                         <div className='flex justify-end'>
                         </div>
+                        <Link to='/' className='flex justify-end'><button className='text-sm text-slate-400 hover:text-slate-500 hover:scale-110'>X</button></Link>
                         <p className='text-2xl text-gray-500 my-4 mx-2'>Sign Up</p>
                         <input type="text" placeholder='Username' onChange={(e) => { setUserName(e.target.value) }} value={userName} className={inputClass} required />
                         <input type="email" placeholder='Email' onChange={(e) => { setEmail(e.target.value) }} value={email} className={inputClass} required />

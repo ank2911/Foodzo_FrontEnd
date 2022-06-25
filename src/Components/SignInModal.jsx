@@ -20,7 +20,7 @@ function SignInModal({buttonName}) {
             <button  className='bg-transparent text-sm font-semibold text-white rounded-full hover:text-orange-400' onClick={() => {setShowModal(true)}}>{buttonName}</button>
             {showModal? (
             <>
-            <div className='bg-transparent fixed inset-x-0 z-50  grid place-content-center h-full'>
+            <div className='bg-transparent fixed inset-0 grid place-content-center h-full'>
                 <form className='grid place-content-center w-screen' onSubmit={handleSubmit}>
                     <div className='shrink content-center p-6 mx-4 max-w-md bg-white rounded-xl shadow-xl'>
                         <div className='flex justify-end'>
