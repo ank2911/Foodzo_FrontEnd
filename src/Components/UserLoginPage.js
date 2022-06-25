@@ -36,4 +36,4 @@ function SignInModal({buttonName}) {
     )
 }
 
-export default SignInModal
+export default SignInModal;
