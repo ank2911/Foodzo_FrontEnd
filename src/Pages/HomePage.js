@@ -32,16 +32,16 @@ function HomePage({handleAddToCart,cart}) {
             
             {/* </UserContext.Provider> */}
             <div className='relative' >
-           <div style={{backgroundImage: 'url(images/hero3.jpg)'}} className='h-[96vh] p-6 grid justify-items-center items-end'>
+           <div style={{backgroundImage: 'url(images/hero.jpg)',backgroundSize: 'cover', backgroundAttachment:'fixed'}} className='h-[94vh] p-6 grid justify-items-center items-end object-cover'>
                 
-                <div className='flex-col backdrop-blur-[2px]'>
-                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold md:text-6xl text-5xl p-2'>Are you hungry?</p>
-                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse font-bold md:text-6xl text-5xl p-2'>OrderNow</p>
+                <div className='flex-col'>
+                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold md:text-7xl text-5xl p-2'>Are you hungry?</p>
+                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse font-bold md:text-7xl text-5xl p-2'>OrderNow</p>
                 </div>
                 
                 <div className="flex justify-center md:w-[50vh] min-w-[40vh]">
                     <input type="text" placeholder="Search for your location" 
-                     className="px-4 py-1 border-y-black border-black bg-white placeholder:text-black rounded-full"
+                     className="px-4 py-1 border-y-black border-black border-2 bg-white placeholder:text-black rounded-full"
                      value={searchData}
                      onChange={(e) =>{setSearchData(e.target.value)}}
                      >
