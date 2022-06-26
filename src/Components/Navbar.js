@@ -29,7 +29,7 @@ function Navbar({ cart }) {
 
         </ul>
         <div className="md:hidden flex w-9/12 justify-end right-0 text-white" onClick={navHandler}>
-          {open ? <AiOutlineClose size={25} /> : <BiMenu size={30} />}
+          {open ? <AiOutlineClose size={25}/> : <BiMenu size={30} className='mx-3'/>}
         </div>
         <Link to='/cart'><MdShoppingCart size={25} className="text-white" /><span className="badge">{cart.length}</span></Link>
       </div>

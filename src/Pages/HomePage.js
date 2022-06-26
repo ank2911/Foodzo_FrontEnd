@@ -3,7 +3,7 @@ import DemoItems from '../Components/DemoItems'
 import FoodItems from '../Components/FoodItems'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-//import { BiSearch} from "react-icons/bi";
+import { BiSearch} from "react-icons/bi";
 
 function HomePage({handleAddToCart,cart}) {
     const [items,setItems]= useState(DemoItems);
@@ -26,24 +26,28 @@ function HomePage({handleAddToCart,cart}) {
     return (
 
 
-        <div className="sticky font-Myfont">
+        <div className="home sticky font-Myfont">
             
             <Navbar  cart={ cart}/>
             
             {/* </UserContext.Provider> */}
             <div className='relative' >
-           <div className="">
-                {/* <div className="flex justify-end m-auto pt-20 pl-28 w-1/2 absolute ">
-                    <BiSearch size={29} className="absolute right-1.5 pt-1"/>
-                    <input type="text" placeholder=" Search Your Items here..." 
-                     className="pl-3 border-2 border-black bg-white placeholder:text-black rounded-full"
+           <div style={{backgroundImage: 'url(images/hero3.jpg)'}} className='h-[96vh] p-6 grid justify-items-center items-end'>
+                
+                <div className='flex-col backdrop-blur-[2px]'>
+                    <p className='text-white md:text-6xl text-5xl border-black'>Are you hungry?</p>
+                    <p className='text-green-400 md:text-6xl text-5xl py-2'>OrderNow</p>
+                </div>
+                
+                <div className="flex justify-center md:w-[50vh] min-w-[40vh]">
+                    <input type="text" placeholder="Search for your location" 
+                     className="px-4 py-1 border-y-black border-black bg-white placeholder:text-black rounded-full"
                      value={searchData}
-                     onChange={inputEvent}
+                     onChange={(e) =>{setSearchData(e.target.value)}}
                      >
-
                      </input>
-                </div> */}
-                <img src="images/hero3.jpg" alt="hero" className="w-screen h-screen object-cover" />
+                    <BiSearch size={28} className="absolute my-2 md:ml-[42vh] ml-[32vh]"/>
+                </div>
                 
             </div>
             </div>
