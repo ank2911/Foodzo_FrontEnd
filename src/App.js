@@ -7,6 +7,10 @@ import AdminLogin from './Components/AdminLogin';
 import AdminPage from './Components/AdminPage';
 import HomePage from './Pages/HomePage';
 import Cart from './Pages/Cart';
+import Restaurant from './Pages/Restaurant';
+import RestaurantSignUp from './Components/RestaurantSignUp';
+import RestaurantSignIn from './Components/RestaurantSignIn';
+import Menu from './Components/Menu';
 
 function App() {
   const [cart,setCart] =useState([]);
@@ -53,6 +57,10 @@ const handleDeleteFromCart = (id) =>{
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin_page" element={<AdminPage />} />
         <Route path="/cart" element={<Cart handleDeleteFromCart={handleDeleteFromCart} handleRemoveFromCart={handleRemoveFromCart} handleAddToCart={handleAddToCart} cart={ cart}/>}/>
+        <Route path='/bussiness' element={<Restaurant cart={ cart} handleAddToCart={handleAddToCart}/>}/>
+        <Route path="/restaurant/signup" element={<RestaurantSignUp />} />
+        <Route path="/restaurant/signin" element={<RestaurantSignIn />} />
+        <Route path="/menu" element={<Menu cart={ cart} handleAddToCart={handleAddToCart}/>} />
       </Routes>
 
     </Router>

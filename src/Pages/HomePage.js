@@ -35,8 +35,8 @@ function HomePage({handleAddToCart,cart}) {
            <div style={{backgroundImage: 'url(images/hero3.jpg)'}} className='h-[96vh] p-6 grid justify-items-center items-end'>
                 
                 <div className='flex-col backdrop-blur-[2px]'>
-                    <p className='text-white md:text-6xl text-5xl border-black'>Are you hungry?</p>
-                    <p className='text-green-400 md:text-6xl text-5xl py-2'>OrderNow</p>
+                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold md:text-6xl text-5xl p-2'>Are you hungry?</p>
+                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse font-bold md:text-6xl text-5xl p-2'>OrderNow</p>
                 </div>
                 
                 <div className="flex justify-center md:w-[50vh] min-w-[40vh]">

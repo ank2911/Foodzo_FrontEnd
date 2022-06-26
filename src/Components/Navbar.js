@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdShoppingCart } from "react-icons/md";
-import SignInModal from './SignInModal';
-import SignUpModal from './SignUpModal';
+
 
 function Navbar({ cart }) {
   const [open, setOpen] = useState(false)
@@ -20,10 +19,11 @@ function Navbar({ cart }) {
 
         <ul className="hidden md:flex space-x-4 w-screen py-4 text-lg mx-6  min-w-max">
           <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/'>Home</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/menu'>Menu</Link></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/bussiness'>Business</Link></li>
           <li className='text-sm font-semibold text-white hover:text-orange-400'><a href='#footer'>AboutUs</a></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signup'>SignUp</Link></li>
           <li className='text-sm font-semibold text-white hover:text-orange-400'><Link to='/signin'>SignIn</Link></li>
-          <li className='text-sm font-semibold text-white hover:text-orange-400'><a href='#footer'>Contact</a></li>
+          <li className='text-sm font-semibold text-white hover:text-orange-400'><a href='#footer'>ContactUs</a></li>
 
           {/*<li><Link to='/admin_page'>Admin Login</Link></li>*/}
 
